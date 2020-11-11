@@ -1,0 +1,263 @@
+
+:root {
+  --primary-colorDark: hsl(300, 43%, 22%);
+  --primary-colorPink: hsl(333, 80%, 67%);
+  --neutral-colorDark: hsl(303, 10%, 53%);
+  --neutral-colorMagenta: hsl(300, 24%, 96%);
+  --neutral-colorWhite: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+h1 , h2 {
+  color: var(--primary-colorDark);
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.header p {
+  color: var(--neutral-colorDark);
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal {
+  background-color: var(--primary-colorDark);
+}
+
+.modal img {
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.modal p {
+  color: var(--neutral-colorWhite);
+  font-weight: 400;
+}
+
+.modal--h3 {
+  color: var(--neutral-colorWhite);
+  text-align: center;
+  font-weight: 500;
+} 
+
+.modal--h3-pink {
+  color: var(--primary-colorPink);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------
+----------------------- Mobile -------------------- */   
+@media (max-width: 950px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: 25vh;
+    margin: 2rem 3rem 1rem;
+  }
+
+  header h1 {
+    margin-bottom: 2rem;
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+    height: 28vh;
+  }
+
+  .rate--container img {
+    padding-bottom: 1rem;
+  }
+
+  .rate--container h2 {
+    font-size: 0.8rem;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.8rem 1.2rem;
+    border-radius: 8px;
+    padding: 1.3rem 1.7rem;
+    height: 32vh;
+  }
+
+  .modal--container-iconetitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .modal--container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    height: 6vh;
+  }
+
+  .modal--container-title h3 {
+    font-size: 0.7rem;
+    text-align: left;
+    font-weight: 600;
+    line-height: 0.9rem;
+  }
+
+  .modal--h3 {
+    margin-bottom: 0.3rem;
+  }
+
+  .modal p {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+  }
+}
+
+@media (min-width: 951px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 3.5rem;
+    width: 100%;
+  }
+
+  .wrapper--header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    height: 28vh;
+    width: 50%;
+  }
+
+  .header h1{
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+
+  .header p {
+    text-align: left;
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+    height: 28vh;
+    width: 60%;
+  }
+
+  .rate--container {
+    display: flex;
+    align-items: baseline;
+    padding-left: 0.2rem;
+  }
+
+  .rate--container img {
+    padding-left: 0.3rem;
+  }
+
+  .rate--container h2 {
+    margin-left: 2rem;
+  }
+
+  .rate--container-start {
+    align-self: flex-start;
+  }
+
+  .rate--container-center {
+    align-self: center;
+  }
+
+  .rate--container-end {
+    align-self: flex-end;
+  }
+
+  .modal--wrapper {
+    display: flex;
+    height: 45vh;
+    width: 100%;
+  }
+
+  .modal {
+    width: 100%;
+    height: 29vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    margin-right: 2rem;
+    padding: 1.6rem;
+  }
+  
+  .modal--container-iconetitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .modal--container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    height: 6vh;
+  }
+
+  .modal--container-title h3 {
+    font-size: 0.7rem;
+    text-align: left;
+    font-weight: 600;
+    line-height: 0.9rem;
+  }
+
+  .modal p {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    padding-right: 2rem;
+  }
+
+  .modal--container-irene {
+    align-self: center;
+  }
+
+  .modal--container-anne {
+    align-self: flex-end;
+  }
+}
